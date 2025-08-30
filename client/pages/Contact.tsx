@@ -2,7 +2,7 @@ import { Layout } from "@/components/site/Layout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Phone, MapPin, Whatsapp, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Mail, MapPin, MessageCircle, Facebook, Instagram, Linkedin } from "lucide-react";
 
 export default function Contact() {
   return (
