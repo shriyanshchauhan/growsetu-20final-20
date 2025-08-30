@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Instagram, Linkedin, Twitter } from "lucide-react";
+import { Instagram, Twitter } from "lucide-react";
 
 export function Footer() {
   return (
@@ -37,7 +37,6 @@ export function Footer() {
           <div className="flex gap-3">
             <a aria-label="Instagram" href="https://www.instagram.com/growsetu?igsh=MW0xdDk4NTM4MTN4eg==" target="_blank" rel="noreferrer" className="inline-flex h-9 w-9 items-center justify-center rounded-full border bg-background hover:bg-primary hover:text-primary-foreground transition-colors"><Instagram className="h-4 w-4" /></a>
             <a aria-label="Twitter" href="https://x.com/GrowSetu98934?t=ZgucTiwoBgPq2eD8hw3VXA&s=08" target="_blank" rel="noreferrer" className="inline-flex h-9 w-9 items-center justify-center rounded-full border bg-background hover:bg-primary hover:text-primary-foreground transition-colors"><Twitter className="h-4 w-4" /></a>
-            <a aria-label="LinkedIn" href="#" className="inline-flex h-9 w-9 items-center justify-center rounded-full border bg-background hover:bg-primary hover:text-primary-foreground transition-colors"><Linkedin className="h-4 w-4" /></a>
           </div>
         </div>
       </div>
