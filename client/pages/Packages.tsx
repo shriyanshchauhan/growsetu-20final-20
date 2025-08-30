@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Drawer, DrawerContent, DrawerFooter, DrawerHeader, DrawerTitle } from "@/components/ui/drawer";
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
+import { Check } from "lucide-react";
 import { Pricing } from "@/components/sections/Pricing";
 
 const tiers = [
