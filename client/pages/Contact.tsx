@@ -2,7 +2,7 @@ import { Layout } from "@/components/site/Layout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, MessageCircle, Instagram, Linkedin, Phone, Twitter } from "lucide-react";
+import { Mail, MapPin, MessageCircle, Instagram, Phone, Twitter } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -70,7 +70,6 @@ export default function Contact() {
               <div className="mt-4 flex gap-3">
                 <a aria-label="Instagram" href="https://www.instagram.com/growsetu?igsh=MW0xdDk4NTM4MTN4eg==" target="_blank" rel="noreferrer" className="inline-flex h-9 w-9 items-center justify-center rounded-full border hover:bg-primary hover:text-primary-foreground transition-colors"><Instagram className="h-4 w-4" /></a>
                 <a aria-label="Twitter" href="https://x.com/GrowSetu98934?t=ZgucTiwoBgPq2eD8hw3VXA&s=08" target="_blank" rel="noreferrer" className="inline-flex h-9 w-9 items-center justify-center rounded-full border hover:bg-primary hover:text-primary-foreground transition-colors"><Twitter className="h-4 w-4" /></a>
-                <a aria-label="LinkedIn" href="#" className="inline-flex h-9 w-9 items-center justify-center rounded-full border hover:bg-primary hover:text-primary-foreground transition-colors"><Linkedin className="h-4 w-4" /></a>
               </div>
             </div>
           </div>
