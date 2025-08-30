@@ -83,7 +83,7 @@ export default function Contact() {
         rel="noreferrer"
         className="fixed bottom-6 right-6 inline-flex items-center gap-2 rounded-full bg-green-500 px-4 py-2 text-white shadow-lg hover:bg-green-600"
       >
-        <Whatsapp className="h-5 w-5" /> Chat
+        <MessageCircle className="h-5 w-5" /> Chat
       </a>
     </Layout>
   );
