@@ -60,7 +60,7 @@ export default function Packages() {
               <TabsContent key={c.key} value={c.key} className="mt-6 animate-fadeIn">
                 <div className="grid gap-6 md:grid-cols-3">
                   {tiers.map((t) => (
-                    <Card key={`${c.key}-${t.name}`} className="flex flex-col rounded-2xl border shadow-sm">
+                    <Card key={`${c.key}-${t.name}`} className="flex flex-col rounded-2xl border shadow-sm bg-white">
                       <CardHeader>
                         <CardTitle className="text-xl">{`${c.prefix} ${t.name}`}</CardTitle>
                         <p className="text-3xl font-bold text-primary">{t.price}</p>
@@ -77,6 +77,36 @@ export default function Packages() {
                       </CardFooter>
                     </Card>
                   ))}
+                  {c.key === "branding" && (
+                    <Card className="flex flex-col rounded-2xl border shadow-sm bg-white">
+                      <CardHeader>
+                        <span className="inline-flex w-fit rounded-full bg-secondary px-2 py-1 text-xs text-foreground/70">Best for Startups & Small Businesses</span>
+                        <CardTitle className="text-xl">Logo Designing</CardTitle>
+                        <p className="text-sm text-muted-foreground">Creative Branding for Your Business</p>
+                        <p className="text-3xl font-bold text-primary">₹1500 <span className="text-sm font-normal text-foreground/70">(one-time)</span></p>
+                      </CardHeader>
+                      <CardContent>
+                        <ul className="space-y-2 text-sm text-muted-foreground">
+                          {[
+                            "3 Unique Logo Samples",
+                            "2 Revisions",
+                            "High-Quality PNG & JPG",
+                            "Editable Source File (AI/PSD)",
+                            "Social Media Ready Versions",
+                            "Delivery in 3–4 Days",
+                          ].map((f) => (
+                            <li key={f} className="flex items-start gap-2">
+                              <Check className="h-4 w-4 text-primary mt-0.5" />
+                              <span>{f}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </CardContent>
+                      <CardFooter className="mt-auto">
+                        <Button className="w-full rounded-full" onClick={() => onGet("branding", "Logo Designing")}>Get Your Logo</Button>
+                      </CardFooter>
+                    </Card>
+                  )}
                 </div>
               </TabsContent>
             ))}
