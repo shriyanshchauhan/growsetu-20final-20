@@ -82,6 +82,10 @@ export default function Packages() {
           </Tabs>
         </div>
 
+        <div className="mt-6">
+          <Pricing onSelect={(plan) => onGet("pricing", plan)} />
+        </div>
+
         <Drawer open={open} onOpenChange={setOpen}>
           <DrawerContent className="animate-slideUp">
             <DrawerHeader>
