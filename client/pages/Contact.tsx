@@ -63,7 +63,7 @@ export default function Contact() {
             <div className="rounded-2xl border p-6 bg-white">
               <h3 className="font-semibold mb-4">Reach us directly</h3>
               <ul className="space-y-3 text-sm">
-                <li className="flex items-center gap-3"><Mail className="h-4 w-4 text-primary" /> hello@growsetu.com</li>
+                <li className="flex items-center gap-3"><Mail className="h-4 w-4 text-primary" /> <a className="hover:text-primary" href="mailto:work.growsetu@gmail.com">work.growsetu@gmail.com</a></li>
                 <li className="flex items-center gap-3"><Phone className="h-4 w-4 text-primary" /> <a className="hover:text-primary" href="tel:+919410132905">+91 9410132905</a></li>
                 <li className="flex items-center gap-3"><MapPin className="h-4 w-4 text-primary" /> Dehradun, Uttarakhand</li>
               </ul>
