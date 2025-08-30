@@ -92,7 +92,7 @@ export default function Packages() {
               <DrawerTitle>
                 {submitted
                   ? "Thank you!"
-                  : `Get Started — ${selected ? `${categories.find((x) => x.key === selected.category)?.prefix} ${selected.tier}` : "Package"}`}
+                  : `Get Started — ${selected ? (selected.category === "pricing" ? selected.tier : `${categories.find((x) => x.key === selected.category)?.prefix} ${selected.tier}`) : "Package"}`}
               </DrawerTitle>
             </DrawerHeader>
             <div className="px-4 pb-4">
