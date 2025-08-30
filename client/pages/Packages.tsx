@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Drawer, DrawerContent, DrawerFooter, DrawerHeader, DrawerTitle } from "@/components/ui/drawer";
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
+import { Pricing } from "@/components/sections/Pricing";
 
 const tiers = [
   { name: "Basic", price: "₹4,999", features: ["Up to 3 pages", "Mobile responsive", "Basic SEO", "Contact form"] },
