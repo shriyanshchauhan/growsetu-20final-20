@@ -2,7 +2,7 @@ import { Layout } from "@/components/site/Layout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, MessageCircle, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Mail, MapPin, MessageCircle, Facebook, Instagram, Linkedin, Phone } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -43,7 +43,7 @@ export default function Contact() {
               <div className="flex gap-3">
                 <Button type="submit" className="rounded-full">Send Message</Button>
                 <Button asChild variant="secondary" className="rounded-full">
-                  <a href="https://wa.me/919999999999?text=Hi%20GrowSetu%2C%20I%20want%20to%20discuss%20my%20project." target="_blank" rel="noreferrer">
+                  <a href="https://wa.me/919410132905?text=Hi%20GrowSetu%2C%20I%20want%20to%20discuss%20my%20project." target="_blank" rel="noreferrer">
                     Chat on WhatsApp
                   </a>
                 </Button>
@@ -64,6 +64,7 @@ export default function Contact() {
               <h3 className="font-semibold mb-4">Reach us directly</h3>
               <ul className="space-y-3 text-sm">
                 <li className="flex items-center gap-3"><Mail className="h-4 w-4 text-primary" /> hello@growsetu.com</li>
+                <li className="flex items-center gap-3"><Phone className="h-4 w-4 text-primary" /> <a className="hover:text-primary" href="tel:+919410132905">+91 9410132905</a></li>
                 <li className="flex items-center gap-3"><MapPin className="h-4 w-4 text-primary" /> Dehradun, Uttarakhand</li>
               </ul>
               <div className="mt-4 flex gap-3">
@@ -78,7 +79,7 @@ export default function Contact() {
 
       {/* Floating WhatsApp */}
       <a
-        href="https://wa.me/919999999999?text=Hi%20GrowSetu%2C%20I%20want%20to%20book%20a%20free%20consultation."
+        href="https://wa.me/919410132905?text=Hi%20GrowSetu%2C%20I%20want%20to%20book%20a%20free%20consultation."
         target="_blank"
         rel="noreferrer"
         className="fixed bottom-6 right-6 inline-flex items-center gap-2 rounded-full bg-green-500 px-4 py-2 text-white shadow-lg hover:bg-green-600"
