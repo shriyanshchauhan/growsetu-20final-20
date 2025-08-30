@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container grid gap-10 py-12 md:grid-cols-4">
         <div className="space-y-4">
           <div className="flex items-center gap-2 font-extrabold text-xl">
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">GS</span>
+            <img src="https://cdn.builder.io/api/v1/image/assets%2Fe5a31c32c84c4d84bc3bed074d9eba31%2Fc76011f7c99a48028c568e20301938c0?format=webp&width=200" alt="GrowSetu logo" className="h-8 w-8 rounded-lg object-cover border" />
             <span>GrowSetu</span>
           </div>
           <p className="text-sm text-muted-foreground max-w-xs">
