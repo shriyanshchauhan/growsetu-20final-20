@@ -28,6 +28,7 @@ export function Footer() {
           <h4 className="font-semibold mb-3">Contact</h4>
           <ul className="space-y-2 text-sm">
             <li>Email: <a className="hover:text-primary" href="mailto:hello@growsetu.com">hello@growsetu.com</a></li>
+            <li>Phone: <a className="hover:text-primary" href="tel:+919410132905">+91 9410132905</a></li>
             <li>Dehradun, Uttarakhand</li>
           </ul>
         </div>
