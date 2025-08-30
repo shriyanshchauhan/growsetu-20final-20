@@ -12,6 +12,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
+import Packages from "./pages/Packages";
 
 const queryClient = new QueryClient();
 
