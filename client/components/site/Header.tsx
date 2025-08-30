@@ -21,8 +21,16 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b">
       <div className="container flex h-16 items-center justify-between">
-        <Link to="/" className="font-extrabold text-xl tracking-tight flex items-center gap-2" onClick={close}>
-          <img src="https://cdn.builder.io/api/v1/image/assets%2Fe5a31c32c84c4d84bc3bed074d9eba31%2Fc76011f7c99a48028c568e20301938c0?format=webp&width=200" alt="GrowSetu logo" className="h-8 w-8 rounded-lg object-cover border" />
+        <Link
+          to="/"
+          className="font-extrabold text-xl tracking-tight flex items-center gap-2"
+          onClick={close}
+        >
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2Fe5a31c32c84c4d84bc3bed074d9eba31%2Fc76011f7c99a48028c568e20301938c0?format=webp&width=200"
+            alt="GrowSetu logo"
+            className="h-8 w-8 rounded-lg object-cover border"
+          />
           <span>GrowSetu</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6">
@@ -55,7 +63,9 @@ export function Header() {
         </button>
       </div>
       {/* Mobile menu */}
-      <div className={cn("md:hidden border-t bg-white", open ? "block" : "hidden")}> 
+      <div
+        className={cn("md:hidden border-t bg-white", open ? "block" : "hidden")}
+      >
         <div className="container py-4 flex flex-col gap-3">
           {navItems.map((item) => (
             <NavLink
@@ -75,7 +85,9 @@ export function Header() {
             </NavLink>
           ))}
           <Button asChild className="rounded-full">
-            <Link to="/contact" onClick={close}>Get Started</Link>
+            <Link to="/contact" onClick={close}>
+              Get Started
+            </Link>
           </Button>
         </div>
       </div>

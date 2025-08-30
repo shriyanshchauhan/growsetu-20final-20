@@ -16,13 +16,15 @@ export default function About() {
           <div className="rounded-2xl border p-6 bg-white">
             <h3 className="font-semibold text-xl">Our Mission</h3>
             <p className="mt-2 text-muted-foreground">
-              Empower local businesses with modern digital solutions that are accessible, effective, and growth-driven.
+              Empower local businesses with modern digital solutions that are
+              accessible, effective, and growth-driven.
             </p>
           </div>
           <div className="rounded-2xl border p-6 bg-white">
             <h3 className="font-semibold text-xl">Our Vision</h3>
             <p className="mt-2 text-muted-foreground">
-              Be the trusted digital partner for small businesses across India, delivering measurable results and lasting brands.
+              Be the trusted digital partner for small businesses across India,
+              delivering measurable results and lasting brands.
             </p>
           </div>
         </div>

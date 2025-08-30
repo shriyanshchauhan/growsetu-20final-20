@@ -1,5 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { Check } from "lucide-react";
 
@@ -13,7 +19,11 @@ type Plan = {
   social: string[];
 };
 
-export function Pricing({ onSelect }: { onSelect?: (planName: string) => void }) {
+export function Pricing({
+  onSelect,
+}: {
+  onSelect?: (planName: string) => void;
+}) {
   const plans: Plan[] = [
     {
       name: "Starter Plan",
@@ -133,7 +143,14 @@ export function Pricing({ onSelect }: { onSelect?: (planName: string) => void })
           >
             <CardHeader>
               <div className="mb-2 inline-flex items-center gap-2">
-                <span className={cn("rounded-full px-2 py-1 text-xs", p.color ?? "bg-secondary text-foreground/70")}>{p.highlight}</span>
+                <span
+                  className={cn(
+                    "rounded-full px-2 py-1 text-xs",
+                    p.color ?? "bg-secondary text-foreground/70",
+                  )}
+                >
+                  {p.highlight}
+                </span>
               </div>
               <CardTitle className="text-xl">{p.name}</CardTitle>
               <p className="text-2xl font-bold text-primary">{p.price}</p>
@@ -144,7 +161,10 @@ export function Pricing({ onSelect }: { onSelect?: (planName: string) => void })
               <Group title="Social Media" items={p.social} />
             </CardContent>
             <CardFooter className="mt-auto">
-              <Button className="w-full rounded-full" onClick={() => onSelect?.(p.name)}>
+              <Button
+                className="w-full rounded-full"
+                onClick={() => onSelect?.(p.name)}
+              >
                 Get Started
               </Button>
             </CardFooter>
